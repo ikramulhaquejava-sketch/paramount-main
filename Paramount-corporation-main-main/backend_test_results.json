@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-02-28T10:22:38.660404",
+  "base_url": "https://meat-processing-hub.preview.emergentagent.com",
+  "total_tests": 6,
+  "passed_tests": 6,
+  "failed_tests": 0,
+  "success_rate": 100.0,
+  "test_details": [
+    {
+      "test_name": "API Root Endpoint",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "response_data": {
+        "message": "Hello World"
+      },
+      "timestamp": "2026-02-28T10:22:37.385110"
+    },
+    {
+      "test_name": "Get Status Checks",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "response_data": [],
+      "timestamp": "2026-02-28T10:22:37.630475"
+    },
+    {
+      "test_name": "Create Status Check",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "response_data": {
+        "id": "e61590cb-7353-4d9a-931f-77ec2a47033e",
+        "client_name": "test_client_102237",
+        "timestamp": "2026-02-28T10:22:37.818399Z"
+      },
+      "timestamp": "2026-02-28T10:22:37.882407"
+    },
+    {
+      "test_name": "Submit Contact Form",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "response_data": {
+        "success": true,
+        "message": "Your inquiry has been received. We will contact you soon.",
+        "email_sent": false
+      },
+      "timestamp": "2026-02-28T10:22:38.147780"
+    },
+    {
+      "test_name": "Submit Contact Form (Invalid Email)",
+      "success": true,
+      "details": "Status: 422, Expected: 422",
+      "response_data": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "email"
+            ],
+            "msg": "value is not a valid email address: An email address must have an @-sign.",
+            "input": "invalid-email",
+            "ctx": {
+              "reason": "An email address must have an @-sign."
+            }
+          }
+        ]
+      },
+      "timestamp": "2026-02-28T10:22:38.400807"
+    },
+    {
+      "test_name": "Frontend Loading",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": null,
+      "timestamp": "2026-02-28T10:22:38.659759"
+    }
+  ]
+}

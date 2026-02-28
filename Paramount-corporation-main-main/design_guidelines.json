@@ -1,0 +1,174 @@
+{
+  "project_name": "Paramount Food Corporation",
+  "theme_mode": "light",
+  "design_philosophy": {
+    "core_concept": "Clinical Luxury",
+    "emotional_tone": "Trust, Hygiene, Premium Export, Tradition",
+    "description": "A high-end export interface that balances the raw nature of the product with the precision of logistics. Uses deep maroon to signal the industry but frames it in sterile white and gold to elevate it to a luxury status."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "weights": ["400", "600", "700"],
+      "usage": "Use for all section titles, hero text, and impactful statements. Letter spacing: tight.",
+      "fallback": "serif"
+    },
+    "body": {
+      "font_family": "DM Sans, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Use for all descriptive text, navigation, and UI elements. Letter spacing: normal.",
+      "fallback": "sans-serif"
+    },
+    "installation_command": "yarn add @fontsource/playfair-display @fontsource/dm-sans"
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#800000",
+        "foreground": "#FFFFFF",
+        "description": "Deep Maroon/Dried Blood - Industry Standard, Premium"
+      },
+      "secondary": {
+        "DEFAULT": "#D4AF37",
+        "foreground": "#000000",
+        "description": "Metallic Gold - Used for badges, certifications, and accent lines"
+      },
+      "accent": {
+        "DEFAULT": "#000000",
+        "foreground": "#FFFFFF",
+        "description": "Pure Black - Used for the logo and highest contrast elements"
+      },
+      "background": "#FFFFFF",
+      "surface": "#F9FAFB",
+      "muted": "#E5E7EB",
+      "border": "#E5E7EB"
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "maroon": {
+          "DEFAULT": "#800000",
+          "50": "#FDF2F2",
+          "100": "#FDE8E8",
+          "900": "#4B0000"
+        },
+        "gold": {
+          "DEFAULT": "#D4AF37",
+          "light": "#F3E5AB"
+        }
+      }
+    }
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "spacing": "Relaxed. Use p-24 or p-32 for section vertical padding.",
+    "grid_system": "Bento Grid for features, Uniform Grid (3-4 cols) for products.",
+    "border_radius": "rounded-sm (Sharp/Professional) or rounded-md (Subtle)"
+  },
+  "ui_components": {
+    "buttons": {
+      "style": "Sharp corners or minimal radius (2px). Solid Maroon bg with White text for primary. White bg with Maroon border for secondary.",
+      "hover": "Scale 1.05, Shadow-lg"
+    },
+    "cards": {
+      "style": "Flat white background, 1px border-gray-100, hover:border-maroon-900 transition-colors duration-300. No heavy shadows.",
+      "content_padding": "p-6 or p-8"
+    },
+    "navigation": {
+      "style": "Sticky glassmorphism (backdrop-blur-md) with gold bottom border (1px). Links uppercase tracking-widest."
+    },
+    "forms": {
+      "library": "shadcn/ui",
+      "styling": "Minimalist inputs with bottom-border only focus interaction."
+    }
+  },
+  "assets": {
+    "logo_url": "https://customer-assets.emergentagent.com/job_054b88c3-1328-4de1-b926-812e077bbf20/artifacts/q478d0aj_WhatsApp%20Image%202026-02-25%20at%2012.39.18%20AM.jpeg",
+    "product_images": [
+      {
+        "name": "Tenderloin",
+        "url": "https://images.unsplash.com/photo-1690983321239-775be3a0347d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxyYXclMjByZWQlMjBtZWF0JTIwc3RlYWslMjBvbiUyMGJsYWNrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzIyNzM0OTh8MA&ixlib=rb-4.1.0&q=85",
+        "category": "products"
+      },
+      {
+        "name": "Striploin",
+        "url": "https://images.unsplash.com/photo-1690983323540-d6e889c4b107?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxyYXclMjBiZWVmJTIwcm9hc3QlMjBtZWF0JTIwb24lMjB3b29kZW4lMjBib2FyZHxlbnwwfHx8fDE3NzIyNzM0OTl8MA&ixlib=rb-4.1.0&q=85",
+        "category": "products"
+      },
+      {
+        "name": "Rump Steak",
+        "url": "https://images.unsplash.com/photo-1690983321750-ad6f6d59a84b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxyYXclMjBiZWVmJTIwcm9hc3QlMjBtZWF0JTIwb24lMjB3b29kZW4lMjBib2FyZHxlbnwwfHx8fDE3NzIyNzM0OTl8MA&ixlib=rb-4.1.0&q=85",
+        "category": "products"
+      },
+      {
+        "name": "Silverside",
+        "url": "https://images.unsplash.com/photo-1668887465493-c4b0351aea89?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxyYXclMjBtZWF0JTIwY2h1bmtzJTIwcGlsZXxlbnwwfHx8fDE3NzIyNzM1MDB8MA&ixlib=rb-4.1.0&q=85",
+        "category": "products"
+      },
+      {
+        "name": "Blade",
+        "url": "https://images.unsplash.com/photo-1724008847844-8a07df13717d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxyYXclMjBtZWF0JTIwY2h1bmtzJTIwcGlsZXxlbnwwfHx8fDE3NzIyNzM1MDB8MA&ixlib=rb-4.1.0&q=85",
+        "category": "products"
+      },
+      {
+        "name": "Processing / Hygiene",
+        "url": "https://images.unsplash.com/photo-1680714401711-cfb7758cf88b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBtZWF0JTIwcHJvY2Vzc2luZyUyMHBsYW50JTIwaHlnaWVuZSUyMHN0YWlubGVzcyUyMHN0ZWVsfGVufDB8fHx8MTc3MjI3MzQ4OHww&ixlib=rb-4.1.0&q=85",
+        "category": "hero"
+      },
+      {
+        "name": "Export Logistics",
+        "url": "https://images.unsplash.com/photo-1725399490099-51b3c4d3edbb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxjb250YWluZXIlMjBzaGlwJTIwb2NlYW4lMjBsb2dpc3RpY3MlMjBleHBvcnR8ZW58MHx8fHwxNzcyMjczNDg5fDA&ixlib=rb-4.1.0&q=85",
+        "category": "about"
+      },
+      {
+        "name": "Chef Plating",
+        "url": "https://images.unsplash.com/photo-1750943082012-efe6d2fd9e45?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHxjaGVmJTIwcGxhdGluZyUyMGdvdXJtZXQlMjBzdGVhayUyMHJlc3RhdXJhbnQlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzIyNzM0OTB8MA&ixlib=rb-4.1.0&q=85",
+        "category": "hero_alternate"
+      }
+    ]
+  },
+  "content_strategy": {
+    "tagline": "Premium Buffalo Meat Export from India to the World",
+    "value_propositions": [
+      "Halal Certified",
+      "APEDA Registered",
+      "HACCP Compliant",
+      "Global Logistics Network"
+    ],
+    "company_details": {
+      "address": "Sambhal road Moradabad-244001 U.P India",
+      "email": "info.paramountfoodcorporation@gmail.com",
+      "phone": "+91 90458 59114"
+    }
+  },
+  "animations": {
+    "library": "framer-motion",
+    "preferences": {
+      "scroll": "Use Lenis for smooth scrolling",
+      "entrance": "Staggered fade-up for grid items",
+      "hero": "Parallax effect on background image"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' and 'framer-motion' and 'clsx' and 'tailwind-merge'.",
+    "Update tailwind.config.js to include the custom maroon and gold colors.",
+    "Use the provided logo URL in the Navbar.",
+    "Implement the 'Contact Us' form using Shadcn Input, Textarea, and Button components.",
+    "For the 'Certificates' section, use a bento grid layout with placeholder certificate images if real ones are not available, styled with gold borders.",
+    "Ensure the 'Products' page uses the grid layout with the provided meat images.",
+    "The 'Home' page hero must be visually striking, possibly using the 'Chef Plating' or 'Export Logistics' image with a dark overlay and white/gold text.",
+    "Do NOT use gradients for backgrounds. Use solid colors or subtle noise textures."
+  ],
+  "UNIVERSAL_GUIDELINES": {
+    "design_rules": [
+      "No generic centered layouts.",
+      "Use 2-3x more spacing than typical.",
+      "Every interaction needs micro-animations.",
+      "Use glassmorphism effects for the sticky navbar.",
+      "Buttons should be sharp or minimal radius, no full-rounded pills for this industrial theme."
+    ],
+    "accessibility": [
+      "Ensure maroon text on white meets AA contrast.",
+      "All interactive elements must have data-testid."
+    ]
+  }
+}
